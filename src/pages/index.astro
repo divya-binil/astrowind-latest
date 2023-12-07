@@ -1,0 +1,409 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Note from '~/components/widgets/Note.astro';
+import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Content from '~/components/widgets/Content.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Explore Our Patents',
+        href: '/blog',
+        target: '_blank',
+        icon: 'tabler:download',
+      },
+      // { text: 'Learn more', href: '#features' },
+    ]}
+    image={{ src: '~/assets/images/hero.png', alt: 'AstroWind Hero Image' }}
+  >
+    <Fragment slot="title">
+      Empower Your Innovation: Explore and 
+Acquire Our Breakthrough Patents
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="hidden sm:inline">
+        Intellectual Frontiers presents a gateway to innovation through 
+our extensive advanced tech patent portfolio, offering 
+breakthrough solutions across various industries. Each patent 
+is an opportunity for your business to leap forward, combining 
+cutting-edge technology with strategic innovation. Discover, 
+explore, and acquire the keys to your future success and 
+industry leadership with our patent collection.</span
+      >
+     
+    </Fragment>
+  </Hero>
+
+  <!-- Note Widget ******************* -->
+
+  <!-- <Note /> -->
+
+
+    <Features
+    id="features"
+    tagline=""
+    title="Featured Patents"
+    subtitle=""
+    items={[
+      {
+        title: 'Efficient Response Management System and Method for Crowdsourced Networks',
+        description:
+          `In the rapidly evolving digital era, people increasingly turn to online crowdsourced networks to find answers and solutions to a wide array of queries and challenges. These platforms serve as invaluable resources, connecting individuals with a diverse and knowledgeable community eager to share insights and expertise. However, amid this digital revolution, a formidable problem has emerged, one that casts a shadow of doubt over the reliability and accuracy of the responses offered by the crowd of respondents.`,
+        icon: 'tabler:brand-tailwind',
+      },
+      {
+        title: 'Aggregating Trustworthy Rating Indicators for Enhancing Reputation Management',
+        description:
+          `The existing landscape of online rating and review platforms is fraught with significant challenges in ensuring the accuracy, reliability, and authenticity of the information presented. These platforms host a plethora of reviews and ratings that can vary dramatically in their assessments of a given entity, such as a physician, primarily due to the diverse backgrounds and intentions of reviewers. Moreover, the trustworthiness of these reviews and the credibility of the reviewers themselves remain uncertain.`,
+        icon: 'tabler:components',
+      },
+      {
+        title: 'Integrated Healthcare System with Predictive Analytics and Risk Management through Social Networking',
+        description:
+          'The existing landscape of device interaction and automation, spanning across various domains such as healthcare, manufacturing, and aviation, faces significant challenges. While there have been efforts to facilitate device interconnection and interaction, there remains a pressing need for more sophisticated systems and methods. These systems must not only streamline the communication between devices but also enable seamless integration into a socially aware network. The current state of device management falls short in providing comprehensive solutions to address these challenges.',
+        icon: 'tabler:list-check',
+      },
+      {
+        title: 'Optimizing Rating Aggregation - A Method for Creating Accurate Aggregate Rating Indicators',
+        description:
+          'Existing methods and systems for rating aggregation face significant challenges in providing accurate and reliable aggregate scores for entities, such as professionals or businesses. Review platforms often yield disparate ratings, influenced by various factors like reviewer subjectivity and the authenticity of reviews. While rating aggregation algorithms attempt to collate these ratings to form a single indicator of an entity’s credibility, they often fall short in delivering optimal and dependable results.',
+        icon: 'tabler:rocket',
+      },
+     
+    ]}
+  />
+
+  <!-- Features Widget *************** -->
+
+  <Features
+    id="features"
+    tagline=""
+    title="Featured Topics"
+    subtitle=""
+    items={[
+      {
+        title: 'Precision Learning',
+        description:
+          `Tailored Intellectual Development harnesses 
+advanced technologies and data analytics, offering 
+a nuanced educational experience for professionals 
+to master complex facets of intellectual property 
+and innovation.`,
+        icon: 'tabler:brand-tailwind',
+      },
+      {
+        title: 'Digital Reputation Management',
+        description:
+          `Proactively shaping a positive digital presence, Online Image Optimization involves strategic measures to enhance and safeguard an entity's online reputation.`,
+        icon: 'tabler:components',
+      },
+      {
+        title: 'Medical Device Integration',
+        description:
+          'Seamless incorporation of medical devices into interconnected systems, Medical Device Integration optimizes healthcare workflows, fostering efficient data exchange and enhancing patient care.',
+        icon: 'tabler:list-check',
+      },
+      {
+        title: 'Service Automation',
+        description:
+          'Service Automation streamlines operational workflows by leveraging advanced technologies, optimizing efficiency, and ensuring seamless, error-free execution of routine tasks within a business environment.',
+        icon: 'tabler:rocket',
+      },
+     
+    ]}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <!-- <Content
+    isReversed
+    tagline="Inside template"
+    title="AstroWind's Blueprint: Fun Meets Functionality!"
+    items={[
+      {
+        title: 'Built on top of Astro 3.0',
+        description:
+          'Benefiting from the performance and developer-friendly features of this modern static site generator.',
+      },
+      {
+        title: 'Styled using Tailwind CSS',
+        description:
+          'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
+      },
+      {
+        title: 'Cross-browser compatibility',
+        description:
+          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Colorful Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
+       Gain a competitive advantage by incorporating industry leading practices
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content> -->
+
+  <!-- Content Widget **************** -->
+
+  <!-- <Content
+    isAfterContent
+    items={[
+      {
+        title: 'High level of customization',
+        description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
+      },
+      {
+        title: 'Multiple layout possibilities',
+        description:
+          'Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.',
+      },
+      {
+        title: 'Fully responsive design',
+        description:
+          "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
+      },
+      {
+        title: 'Integration of media',
+        description:
+          'Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
+      alt: 'Blueprint Image',
+    }}
+  >
+    <Fragment slot="content">Ensure your online presence truly represents you.</Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content> -->
+
+  <!-- Content Widget **************** -->
+<!-- 
+  <Content
+    isReversed
+    isAfterContent
+    items={[
+      {
+        title: 'Enhanced user engagement',
+        description:
+          'Captivate your audience with interactive elements, intuitive navigation, and visually appealing layouts, encouraging longer visits.',
+      },
+      {
+        title: 'Continuous improvement',
+        description:
+          'Ensure your website stays aligned with the latest trends and technologies through regular updates and enhancements.',
+      },
+      {
+        title: 'Time and resource efficiency',
+        description:
+          'Skip the time-consuming process of building a website from scratch and launch your online presence sooner with AstroWind.',
+      },
+      {
+        title: 'Community support',
+        description: `Join the growing AstroWind community for insights, resources, and assistance, ensuring you're never alone on your web development journey.`,
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Astronauts Image',
+    }}
+  >
+    <Fragment slot="content">Designed to foster growth and success.</Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content> -->
+
+  <!-- Steps Widget ****************** -->
+<!-- 
+  <Steps
+    title="Get your dream website up and running in no time with AstroWind."
+    items={[
+      {
+        title: 'Step 1: <span class="font-medium">Download</span>',
+        description:
+          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
+        icon: 'tabler:package',
+      },
+      {
+        title: 'Step 2: <span class="font-medium">Add content</em>',
+        description:
+          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
+        icon: 'tabler:letter-case',
+      },
+      {
+        title: 'Step 3: <span class="font-medium">Customize styles</span>',
+        description:
+          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
+        icon: 'tabler:paint',
+      },
+      {
+        title: 'Ready!',
+        icon: 'tabler:check',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
+      alt: 'Steps image',
+    }}
+  /> -->
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Most viewed patents"
+    subtitle=""
+    tagline=""
+    items={[
+      {
+        title: 'Aggregation of rating indicators',
+        description: "A computer-implemented method and system for publishing an aggregate rating indicator based on a plurality of discrete rating indicators associated with a rated entity.",
+        icon: 'flat-color-icons:template',
+      },
+      {
+        title: 'Computer-controlled precision education and training',
+        description:
+          "A system for streaming of contextual micro-content blocks for a workflow task to facilitate task performance by a user.",
+        icon: 'flat-color-icons:gallery',
+      },
+      {
+        title: 'System for controlling medical devices',
+        description:
+          'Controlling a multi-device module includes a physiological sensor configured to sense physiological characteristics of a subject and generate...',
+        icon: 'flat-color-icons:approval',
+      },
+      {
+        title: 'Digital payment system',
+        description:
+          "A digital payment system for facilitating seamless transactions from a user system to a buyer system. The system includes a service provider system which further includes a service interaction component...",
+        icon: 'flat-color-icons:document',
+      },
+      {
+        title: 'Networking devices for storing profiles longitudinally',
+        description:
+          'A method and networking device for tracking change in a computer executable profile includes retrieving computer executable profile information....',
+        icon: 'flat-color-icons:advertising',
+      },
+      {
+        title: 'Crowdsourced responses management to cases',
+        description: 'A response management system and method configured to allow management of responses to a case submitted by an entity in a crowdsourced network.',
+        icon: 'flat-color-icons:currency-exchange',
+      },
+      
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+
+  <!-- HighlightedPosts Widget ******* -->
+
+  <BlogLatestPosts
+    title="Resources"
+    information={`
+                `}
+  />
+
+  <!-- FAQs Widget ******************* -->
+
+  <FAQs
+    title="Frequently Asked Questions"
+    subtitle=""
+    tagline="FAQs"
+    classes={{ container: 'max-w-6xl' }}
+    items={[
+      {
+        title: 'What types of patents are included in Intellectual Frontiers’ portfolio?',
+        description:
+          "",
+      },
+      {
+        title: 'How can I explore the specific patents available for acquisition?',
+        description:
+          '',
+      },
+      {
+        title: 'What is the process for acquiring a patent from Intellectual Frontiers?',
+        description:
+          "",
+      },
+      {
+        title: "Can IntellectualFrontiers.com assist in understanding how a specific patent can be integrated into my business?",
+        description:
+          "",
+      },
+      {
+        title: 'What support does IntellectualFrontiers.com offer after a patent is acquired?',
+        description:
+          "",
+      },
+      
+    ]}
+  />
+
+  <!-- Stats Widget ****************** -->
+
+  <!-- <Stats
+    stats={[
+      { title: 'Downloads', amount: '132K' },
+      { title: 'Stars', amount: '24.8K' },
+      { title: 'Forks', amount: '10.3K' },
+      { title: 'Users', amount: '48.4K' },
+    ]}
+  /> -->
+
+  <!-- CallToAction Widget *********** -->
+
+  <!-- <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Get template',
+        href: 'https://github.com/onwidget/astrowind',
+        target: '_blank',
+        icon: 'tabler:download',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
+      waste more time! :P
+    </Fragment>
+  </CallToAction> -->
+</Layout>

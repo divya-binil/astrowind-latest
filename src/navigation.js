@@ -25,7 +25,7 @@ export const headerData = {
       href: '#',
     },
     {
-      text: 'Abot Us',
+      text: 'About Us',
       // links: [
       //   {
       //     text: 'Features (Anchor Link)',

@@ -26,41 +26,10 @@ export const headerData = {
     },
     {
       text: 'About Us',
-      // links: [
-      //   {
-      //     text: 'Features (Anchor Link)',
-      //     href: getPermalink('/#features'),
-      //   },
-      //   {
-      //     text: 'Services',
-      //     href: getPermalink('/services'),
-      //   },
-      //   {
-      //     text: 'Pricing',
-      //     href: getPermalink('/pricing'),
-      //   },
-      //   {
-      //     text: 'About us',
-      //     href: getPermalink('/about'),
-      //   },
-      //   {
-      //     text: 'Contact',
-      //     href: getPermalink('/contact'),
-      //   },
-      //   {
-      //     text: 'Terms',
-      //     href: getPermalink('/terms'),
-      //   },
-      //   {
-      //     text: 'Privacy policy',
-      //     href: getPermalink('/privacy'),
-      //   },
-      // ],
       href: '#',
     },
     {
       text: 'Patient Assets',
-      // links: [
       //   {
       //     text: 'Lead Generation',
       //     href: getPermalink('/landing/lead-generation'),
@@ -90,28 +59,6 @@ export const headerData = {
     },
     {
       text: 'FAQs',
-      // links: [
-      //   {
-      //     text: 'Blog List',
-      //     href: getBlogPermalink(),
-      //   },
-      //   {
-      //     text: 'Article',
-      //     href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
-      //   },
-      //   {
-      //     text: 'Article (with MDX)',
-      //     href: getPermalink('markdown-elements-demo-post', 'post'),
-      //   },
-      //   {
-      //     text: 'Category Page',
-      //     href: getPermalink('tutorials', 'category'),
-      //   },
-      //   {
-      //     text: 'Tag Page',
-      //     href: getPermalink('astro', 'tag'),
-      //   },
-      // ],
       href: '#',
     },
     {
@@ -139,26 +86,6 @@ export const footerData = {
         // { text: 'Pricing', href: '#' },
         // { text: 'Resources', href: '#' },
       ],
-    },
-    {
-      title: '',
-      // links: [
-      //   { text: 'Developer API', href: '#' },
-      //   { text: 'Partners', href: '#' },
-      //   { text: 'Atom', href: '#' },
-      //   { text: 'Electron', href: '#' },
-      //   { text: 'AstroWind Desktop', href: '#' },
-      // ],
-    },
-    {
-      title: '',
-      // links: [
-      //   { text: 'Docs', href: '#' },
-      //   { text: 'Community Forum', href: '#' },
-      //   { text: 'Professional Services', href: '#' },
-      //   { text: 'Skills', href: '#' },
-      //   { text: 'Status', href: '#' },
-      // ],
     },
     {
       title: 'Contact/Chatbot',
